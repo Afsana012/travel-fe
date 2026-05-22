@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+button,
+a,
+[role="button"],
+input[type="checkbox"],
+input[type="radio"],
+label,
+select,
+summary {
+  cursor: pointer;
+}
+
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .safe-area-pb {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
