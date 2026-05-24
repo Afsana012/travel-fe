@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const CtaBanner = () => {
   return (
@@ -12,10 +13,13 @@ const CtaBanner = () => {
           Join thousands of travelers who are already planning their dream trips.
           Create your free account and start exploring today.
         </p>
-        <button className="mt-8 inline-flex items-center gap-2 bg-white text-slate-800 px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-slate-100 transition">
+        <Link
+          href="/signup"
+          className="mt-8 inline-flex items-center gap-2 bg-white text-slate-800 px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-slate-100 transition"
+        >
           Create Free Account
           <ArrowRight className="size-4" />
-        </button>
+        </Link>
       </div>
     </section>
   );
