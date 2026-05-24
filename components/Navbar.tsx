@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
             href="/signin"
             className="text-sm md:text-base font-medium hover:text-blue-600 transition"
           >
-            Login
+            Login 
           </Link>
           <Link
             href="/signup"
